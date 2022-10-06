@@ -6,7 +6,6 @@ Mitutoyo Digimatic Instrument Sensor
     :image: mitutoyo_digimatic.jpg
 
 The ``mitutoyo`` sensor platform allows you to use your Mitutoyo Digimatic (linear gauge, caliper, micrometer) instruments or any Digimatic SPC compatible clone/OEM instrument for data logging with ESPHome.
-The :ref:`I²C Bus <i2c>` is required to be set up in your configuration for this sensor to work.
 
 .. figure:: images/mitutoyo_ha.png
     :align: center
@@ -44,7 +43,7 @@ Configuration variables:
 Advanced use:
 --------------------
 
-Some Mitutoyo Digimatic sensors will offer possibility of setting an arbitrary absolute point ´´ABS´´ and use it as an origin for further measurements. This is achieved by using an additional configuration as shown here:
+Some Mitutoyo Digimatic sensors will offer possibility of setting an arbitrary absolute point **ABS** and use it as an origin for further measurements. This is achieved by using an additional configuration as shown here:
 
 .. code-block:: yaml
 
@@ -91,7 +90,7 @@ The output pins REQ (trigger_pin) and ABS (the pin on the output component) need
     :width: 80.0%
 
 
-Please note that most Mitutoyo Digimatic instruments ``do not`` support getting powered via the Digimatic cable. Refer to the User Manual matching your actual instrument before wiring.
+Please note that most Mitutoyo Digimatic instruments **do not** support getting powered via the Digimatic cable. Refer to the User Manual matching your actual instrument before wiring.
 
 See Also
 --------
