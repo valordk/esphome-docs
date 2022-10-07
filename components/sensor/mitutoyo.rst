@@ -82,15 +82,21 @@ Some Mitutoyo Digimatic sensors will offer possibility of setting an arbitrary a
 Typical wiring:
 --------------------
 
-For stability CLK (clock_pin) and DATA (data_pin) lines of the instrument could be pulled to VCC using 10k-20k resistors;
+The common Digimatic D2 connector is a standard 2x5 IDC connector with a notch and has the following pin numbering:
+
+.. figure:: images/mitutoyo_connector_pins.png
+    :align: center
+    :width: 40.0%
+
+For stability CLK (clock_pin) and DATA (data_pin) lines of the instrument could be pulled to VCC using 10k-47k resistors;
 The output pins REQ (trigger_pin) and ABS (the pin on the output component) need to use an open-collector switch.
 
 .. figure:: images/mitutoyo_wiring.png
     :align: center
-    :width: 80.0%
+    :width: 40.0%
 
 
-Please note that most Mitutoyo Digimatic instruments **do not** support getting powered via the Digimatic cable. Refer to the User Manual matching your actual instrument before wiring.
+Please note that most Mitutoyo Digimatic instruments **do not** support getting powered via the Digimatic cable. Refer to the User Manual matching your actual instrument before wiring. For battery powered units, the pin 9 on the Mitutoyo Digimatic D2 cable can be left not-connected
 
 See Also
 --------
